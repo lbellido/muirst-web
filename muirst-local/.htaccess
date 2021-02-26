@@ -1,0 +1,8 @@
+<filesMatch "\.(html|htm|js|css)$">
+  FileETag None
+  <ifModule mod_headers.c>
+     Header unset ETag
+     Header set Cache-Control "must-revalidate"
+  </ifModule>
+</filesMatch>
+Redirect 302 /~posgrado/muirst/pex-alumnos.html http://www.etsit.upm.es/estudios/practicas-en-empresas/para-alumnos/practicas-academicas-curriculares.html
