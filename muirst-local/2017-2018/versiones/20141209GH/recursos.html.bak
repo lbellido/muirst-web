@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="mast.css" />
+<title>Máster Universitario en Ingeniería de Redes y Servicios Telemáticos de la UPM</title>
+</head>
+<body >
+<div id="cabecera" style="position:absolute; left: 1px; top: 0px; width: 800pt; background-color:#ffefc0">
+<table border="0" cellpadding="0" cellspacing="0" width="102%">
+ <tr>
+ <td width="20">&nbsp;</td>
+ <td><a href="http://www.dit.upm.es/" target=_><img src="dit08.gif" alt="" align="bottom" border="0" height="60" width="60"></a></td>
+ <td width="20">&nbsp;</td>
+ <td nowrap="nowrap">
+   <p class="tit0">
+   <b>Máster Universitario en Ingeniería de Redes y Servicios Telemáticos</b>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+   Universidad Politécnica de Madrid (UPM)
+   </p>
+ </td></tr>
+</table>
+</div>
+<div id="menu" style="position:absolute; left: 8px; top: 70px; width: 125pt; background-color:#ffe0a0">
+<p class="it1">General</p>
+<p class="it2"><a href="index.html">Presentación</a></p>
+<!--p class="it2"><a href="justificacion.html">Justificación</a></p-->
+<!--p class="it2"><a href="objetivos.html">Objetivos</a></p-->
+<p class="it2"><a href="competencias.html">Competencias Específicas</a></p>
+<p class="it2"><a href="asignaturas.html">Itinerarios, Asignaturas y Profesores</a></p>
+<p class="it2"><a href="recursos.html">Recursos</a></p>
+<p class="it2"><a href="contacto.html">Contacto</a></p>
+
+<p class="it1">Procedimientos</p>
+<p class="it2"><a href="admision.html">Admisión y matrícula</a></p>
+<p class="it2"><a href="TFM.html">Trabajo Fin de Master</a></p>
+<p class="it2"><a href="calidad.html">Garantía de calidad</a></p>
+<p class="it2"><a href="permanencia.html">Normativa Alumnos y Permanencia</a></p>
+<p class="it2"><a href="reclamaciones.html">Reclamaciones</a></p>
+
+<p class="it1">Curso Actual</p>
+<!--p class="it2"><a href="matriculados.html">Alumnos</a></p-->
+<p class="it2"><a href="calendario.html">Calendario</a></p>
+<p class="it2"><a href="SI-actividades.html">Seminario</a></p>
+
+
+</div>
+<div id="cuerpo" style="position:absolute; left: 140pt; top: 70px; width: 670pt; background-color:#ffffff">
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+<p class="tit">Recursos a disposición de los estudiantes de Máster</p>
+
+<p class="texto">
+El Dpto. de Ingeniería de Sistemas Telemáticos pone los siguientes recursos
+a disposición de los alumnos de Máster.
+</p>
+
+<p class="tit3">Recursos Didácticos</p>
+
+<p class="itexto">
+Se disponen de dos aulas para actividades docentes y un laboratorio.
+</p>
+
+<p class="tit4">Aulas</p>
+<ul>
+  <li>Aula Principal: B-225. Aula dotada con equipamiento completo audio-visual, dos sistemas de proyección simultáneos, ordenador para presentaciones, gran pizarra y acolchamiento acústico, con aire acondicionado y calefacción central.</lI>
+  <lI>Aula de Respaldo. B-221. En caso de solape de actividades docentes, se dispone de un aula de respaldo, dotada con sistema de proyección, gran pizarra, aire acondicionado y calefacción central.</lI>
+</ul>
+
+<p class="tit4">Laboratorio</p>
+<ul>
+  <li>Laboratorio B-123. Laboratorio de 136'55 m<sup>2</sup> con 64 puestos de alto rendimiento, con arranque de diversos Sistemas Operativos según necesidades, servicio de backup, impresora, aire acondicionado y calefacción central.</li>
+</ul>
+
+<p class="tit3">Recursos Electrónicos</p>
+
+<p class="itexto">
+Los alumnos de máster disponen de acceso a los siguientes recursos electrónicos:
+</p>
+
+<ul>
+  <li>Cuenta en los Servidores del DIT</li>
+  <li>Acceso al sistema <a href="https://moodle.lab.dit.upm.es/moodle/" target="_blank">Moodle del Departamento</A>, para la gestión de la actividad docente de las asignaturas del Máster</li>
+  <li>Correo electrónico (Servicios Centrales de UPM)</li>
+  <li>Servicio de <A HREF="http://www.upm.es/institucional/Estudiantes/Servicios_Red/wifi" target="_blank">Red Inalámbrica</A></li>
+</ul>
+
+</p>
+
+<p class="tit3">Recursos Administrativos</p>
+
+<p class="itexto">
+La Secretaria del Departamento (Despacho B-220) ayuda a los alumnos a resolver los problemas básicos de gestión o dudas que tengan.
+</p>
+
+
+
+
+<!---- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ----->
+<p class="texto">&nbsp;&nbsp;</p>
+</div>
+</body>
+</html>

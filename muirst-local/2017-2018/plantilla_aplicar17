@@ -1,0 +1,12 @@
+mkdir bak
+for i in *.html
+#for i in index.html
+do
+   j=`echo $i | sed -e s/.html//`
+   cp $i bak/$i.bak
+   csplit $i /xxxxxx/+1 /xxxxx/
+   cat plantilla_head17.htm xx01 plantilla_tail17.htm > $i
+   rm xx00 xx01 xx02
+   echo procesado $j
+done
+echo comprobar resultado y borrar directorio bak
