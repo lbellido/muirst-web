@@ -1,0 +1,18 @@
+ sudo ls
+ for file in *; do sudo restricted-chgrp "$( pwd)/$(basename "$file")"; done
+ sudo restricted-chgrp "$( pwd)/$(basename ".htaccess")"
+ cd assets
+ for file in *; do sudo restricted-chgrp "$( pwd)/$(basename "$file")"; done
+ cd css
+ for file in *; do sudo restricted-chgrp "$( pwd)/$(basename "$file")"; done
+ cd ..
+ cd fonts
+ for file in *; do sudo restricted-chgrp "$( pwd)/$(basename "$file")"; done
+ cd ..
+ cd js
+ for file in *; do sudo restricted-chgrp "$( pwd)/$(basename "$file")"; done
+ cd ..
+ cd sass
+ for file in *; do sudo restricted-chgrp "$( pwd)/$(basename "$file")"; done
+ cd ..
+ cd ..
