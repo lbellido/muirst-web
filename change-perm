@@ -1,6 +1,7 @@
  sudo ls
+sudo restricted-chgrp "$( pwd)/$(basename ".htaccess")"
  for file in *; do sudo restricted-chgrp "$( pwd)/$(basename "$file")"; done
- sudo restricted-chgrp "$( pwd)/$(basename ".htaccess")"
+
  cd assets
  for file in *; do sudo restricted-chgrp "$( pwd)/$(basename "$file")"; done
  cd css
