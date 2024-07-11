@@ -11,7 +11,7 @@ done
 
 if [ ! -z "$allflag" ]; then
 echo "***********************************************************"
-echo "* This action will overwrite the current dist public web *"
+echo "* This action will overwrite the current muirst public web *"
 read -r -p "* Are you sure? [y/N] " response
 case $response in
     ([yY][eE][sS]|[yY]) 
@@ -29,12 +29,12 @@ DRAFTREMOTE="posgrado:/home/posgrado/lib/www/muirst-draft"
 # Create public site using ssh forwarding tunnel 
 if [ ! -z "$allflag" ]; then
 echo "Creating public site dit.upm.es/posgrado/muirst"
-rsync -avz -e "$TUNNEL" --delete $LOCALDIR $PUBLICREMOTE
+rsync -avz -e "$TUNNEL" --exclude-from rsync-exclude.txt --delete $LOCALDIR $PUBLICREMOTE
 fi
 
 # Create draft site using ssh forwarding tunnel 
 echo "Creating draft site dit.upm.es/posgrado/muirst-draft"
-rsync -avz -e "$TUNNEL" --delete $LOCALDIR $DRAFTREMOTE
+rsync -avz -e "$TUNNEL" --exclude-from rsync-exclude.txt --delete $LOCALDIR $DRAFTREMOTE
 
 exit 0
 
