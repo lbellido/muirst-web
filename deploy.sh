@@ -22,7 +22,7 @@ esac
 fi
 
 TUNNEL="ssh -p 15001 -l lbt idefix.dit.upm.es ssh"
-LOCALDIR="muirst-local/"
+LOCALDIR="docs/"
 PUBLICREMOTE="posgrado:/home/posgrado/lib/www/muirst"
 DRAFTREMOTE="posgrado:/home/posgrado/lib/www/muirst-draft"
 
