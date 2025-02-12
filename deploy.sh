@@ -23,17 +23,17 @@ fi
 
 TUNNEL="ssh -p 15001 -l lbt idefix.dit.upm.es ssh"
 LOCALDIR="docs/"
-PUBLICREMOTE="posgrado:/home/posgrado/lib/www/muirst"
-DRAFTREMOTE="posgrado:/home/posgrado/lib/www/muirst-draft"
+PUBLICREMOTE="muirst:/home/muirst/lib/www"
+DRAFTREMOTE="muirst:/home/muirst/lib/www/draft"
 
 # Create public site using ssh forwarding tunnel 
 if [ ! -z "$allflag" ]; then
-echo "Creating public site dit.upm.es/posgrado/muirst"
+echo "Creating public site dit.upm.es/muirst"
 rsync -avz -e "$TUNNEL" --exclude-from rsync-exclude.txt --delete $LOCALDIR $PUBLICREMOTE
 fi
 
 # Create draft site using ssh forwarding tunnel 
-echo "Creating draft site dit.upm.es/posgrado/muirst-draft"
+echo "Creating draft site dit.upm.es/muirst/draft"
 rsync -avz -e "$TUNNEL" --exclude-from rsync-exclude.txt --delete $LOCALDIR $DRAFTREMOTE
 
 exit 0
