@@ -1,3 +1,7 @@
+#!/bin/sh
+LOCALDIR="docs/"
+cd $LOCALDIR || exit 1
+
 mkdir bak
 for i in *.html
 #for i in index.html
@@ -9,4 +13,5 @@ do
    rm xx00 xx01 xx02
    echo procesado $j
 done
-echo comprobar resultado y borrar directorio bak
+echo "comprobar resultado y borrar directorio $LOCALDIR/bak"
+cd ..

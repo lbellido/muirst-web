@@ -1,5 +1,23 @@
 #!/bin/sh
+TUNNEL="ssh -p 15001 -l lbt idefix.dit.upm.es ssh"
+LOCALDIR="docs/"
+PUBLICREMOTE="muirst:/home/muirst/lib/www"
+DRAFTREMOTE="muirst:/home/muirst/lib/www/draft"
 allflag=
+
+echo "*************************************************"
+echo "* All permissions of  $LOCALDIR will be changed *"
+read -r -p "* Are you sure? [y/N] " response
+case $response in
+    ([yY][eE][sS]|[yY]) 
+      ;;
+    *)
+      exit;;
+esac
+
+find $LOCALDIR -type d -exec chmod a+xr {} \; 
+find $LOCALDIR -type f -exec chmod a+r {} \; 
+chmod g+s $LOCALDIR
 
 while getopts ":a" option
 do
@@ -21,10 +39,7 @@ case $response in
 esac
 fi
 
-TUNNEL="ssh -p 15001 -l lbt idefix.dit.upm.es ssh"
-LOCALDIR="docs/"
-PUBLICREMOTE="muirst:/home/muirst/lib/www"
-DRAFTREMOTE="muirst:/home/muirst/lib/www/draft"
+
 
 # Create public site using ssh forwarding tunnel 
 if [ ! -z "$allflag" ]; then
