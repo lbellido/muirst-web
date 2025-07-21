@@ -15,8 +15,9 @@ case $response in
       exit;;
 esac
 
-find $LOCALDIR -type d -exec chmod a+xr {} \; 
-find $LOCALDIR -type f -exec chmod a+r {} \; 
+find $LOCALDIR -type f -exec chmod 644 {} \; 
+find $LOCALDIR -type d -exec chmod 755 {} \; 
+
 chmod g+s $LOCALDIR
 
 while getopts ":a" option
