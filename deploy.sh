@@ -46,11 +46,13 @@ fi
 if [ ! -z "$allflag" ]; then
 echo "Creating public site dit.upm.es/muirst"
 rsync -avz -e "$TUNNEL" --exclude-from rsync-exclude.txt --delete $LOCALDIR $PUBLICREMOTE
+echo "https://www.dit.upm.es/~muirst updated"
 fi
 
 # Create draft site using ssh forwarding tunnel 
 echo "Creating draft site dit.upm.es/muirst/draft"
 rsync -avz -e "$TUNNEL" --exclude-from rsync-exclude.txt --delete $LOCALDIR $DRAFTREMOTE
 
+echo "https://www.dit.upm.es/~muirst/draft updated. Please check the draft site and, if everything is correct, run this script with the -a option to update the public site."
 exit 0
 
